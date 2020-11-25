@@ -1,0 +1,22 @@
+<!-- input search -->
+<div class="p-2 d-flex justify-content-center w-100">
+    <div class="flex-column w-100">
+
+        <h1>Youtube cahnnel search app</h1>
+        <label for="cahnnelName">Channel Name: </label>
+        <div class="input-group mb-3" title="Enter channel name">
+            <input type="text" #channelName (keyup.enter)="getData()" class="form-control"
+                placeholder="Youtube Channel... EX: Programming" aria-label="channelName"
+                aria-describedby="basic-addon1" required>
+            <div class="input-group-append" (click)="getData()">
+                <span class="input-group-text" id="basic-addon1">search</span>
+            </div>
+        </div>
+
+        <label for="cahnnelName">Batch Size: </label>
+        <div class="input-group mb-3 w-25" title="Enter batch size">
+            <input type="number" #batchSize (keyup.enter)="getData()" class="form-control" placeholder="50"
+                aria-label="batchSize" aria-describedby="basic-addon1" required>
+        </div>
+    </div>
+</div>

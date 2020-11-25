@@ -1,0 +1,10 @@
+<ul class="w-100 d-flex flex-wrap justify-contenct-between">
+    <li class="w-20 m-2 d-flex flex-column text-center" *ngFor="let channel of channels"
+        title="{{channel.snippet.description}}">
+        <a target=" __blank" href="https://www.youtube.com/channel/{{channel.id.channelId}}">
+            <img class="img-thumbnail" width="200" height="200" src="{{channel.snippet.thumbnails.medium.url}}" />
+        </a>
+        <span>{{channel.snippet.channelTitle}}</span>
+
+    </li>
+</ul>
